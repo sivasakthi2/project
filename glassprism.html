@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+            }
+            .container{
+                height:100%;
+                width: 100%;
+                background:url(https://img.freepik.com/free-vector/gradient-minimalist-background_23-2149974334.jpg?w=740&t=st=1710919730~exp=1710920330~hmac=035168e2e3a0d39c5e52a0a797daea9762ea4b6259e6316d53a37dbf20ea5060);
+                background-position: center ;
+                background-repeat: no-repeat ;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+            }
+            .box
+            {
+                height:600px;
+                width:500px;
+                box-shadow: 8px 8px 10px rgba(0,0,0,0.09), -8px -8px 10px rgba(0,0,0,0.09);
+                border-radius: 20px;
+                backdrop-filter: blur(5px);
+
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+            }
+            h1{
+                font-size: 20px;
+                text-align: center;
+                color: white;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+                letter-spacing: 3px;
+                margin-bottom: 5%;
+                opacity: .7;
+            }
+            label
+            {
+                font-size: 20px;
+                color: white;
+                margin-left: 10%;
+                opacity: .8;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            }
+            input{
+                width: 80%;
+                margin: 5% auto;
+                margin-bottom: 8%;
+                border: none;
+                outline: none;
+                background: transparent;
+                color: white;
+                border-bottom: 1px solid rgba(255,255,255,0.6);
+                opacity: .8;
+            }
+            button{
+                width: 50%;
+                margin: 3% auto;
+                color: black;
+                font-size: 15px;
+                opacity: .7;
+                background: rgba(255,255,255,0.06);
+                padding: 10px 30px;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                text-shadow: 2px 2px 4px rgba(255,255,255,0.2);
+                box-shadow: 3px 3px 3px rgba(31,38,135,37);
+            }
+            a{
+                font-size: 15px;
+                text-align: center;
+                color: black;
+                opacity: .7;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <form name="myform1" action="Register.php" method="post">
+                <h1>Register Here</h1>
+                <label>Username</label>
+                <input type="text" name="uname1" placeholder="Enter Username" required="">
+                <label>Email</label>
+                <input type="Email" name="email" placeholder="Enter email id" required="">
+                <label>Password</label>
+                <input type="password" name="upswd1" placeholder="Enter password" required="">
+                <label>Retype Password</label>
+                <input type="password" name="upswd2" placeholder="Enter password" required="">
+                
+                <input type="submit" name="" value="Register">
+            
+                <a href="file:///C:/xampp/htdocs/php/sing-in.html">existing user, login !?</a>
+                </form>
+
+            </div>
+        </div>
+    </body>
+</html>
